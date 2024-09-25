@@ -1,0 +1,287 @@
+.main-container{
+    height: 100vh;
+    background: url(images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.w-container{
+    height: 80%;
+    width: 55%;
+    background: transparent;
+    
+  
+}
+
+.weather-container .imageContainer{
+    width: 200px;
+    height: 200px;
+}
+
+.w-container .row{
+    height: 100%;
+    width: 100%;
+    
+    
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(25px);
+    flex-wrap: wrap;
+
+}
+.w-container .row .weather-container{
+    height: 100%;
+    width: 55%;
+    background-image: url(images/Storm.jpg) ;
+    background: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    overflow: hidden;
+
+    
+
+    
+    padding: none;
+    
+    
+
+}
+.w-container .row .weather-container .text-123 span{
+    color: #fff;
+    font-size: 25px;
+    margin-top:0.7rem ;
+}
+.w-container .row .weather-container h3{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 1rem; 
+    margin-right: 1rem;
+    align-self: right;
+
+}
+.w-container .row .weather-container .text-2 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 18rem;
+   display: flex;
+   flex-direction: column;
+   
+   max-width: 540px;
+
+   
+}
+
+.w-container .row .weather-container .text-123{
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.w-container .row .weather-container .text-2 p{
+    font-size: 18px;
+    color: white;
+
+}
+.w-container .row .weather-container .text-2 h1{
+    color: #fff;
+    margin-bottom: 1.3rem ;
+    
+
+}
+
+/*right part*/
+
+.w-container .row .col-2s{
+   height: 100%;
+   width: 45%;
+   display: flex;
+   padding: 2rem;
+   justify-content: space-between;
+   flex-direction: column;
+   align-items: center;
+    
+    
+}
+.col-2s .sun{
+    animation: animate 15s infinite linear;
+    transition: all 0.1 linear;
+    max-width: 200px;
+    
+}
+
+@keyframes animate {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.w-container .row .col-2s .weather h2{
+    color: #fff;
+    font-family: sans-serif;
+    
+    letter-spacing: 2px;
+    font-size: 28px;
+
+}
+.w-container .row .col-2s input{
+    outline: none;
+
+    max-width: 150px;
+    height: 30px;
+    background: transparent;
+    color: #fafafa;
+
+   
+    outline-offset: none;
+    border-right: none;
+    
+    margin: 10px;
+    font-size: 14px;
+    border: transparent;
+    border-bottom: 1px solid #ccc;
+    
+
+}
+.w-container .row .col-2s .search{
+    color: #ccc;
+    font-size: 16px;
+    margin-top: 10px ;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+.w-container .row .col-2s .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.date-forcast{
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-direction: column; */
+    box-sizing: border-box;
+    
+
+}
+.date-forcast p{
+    width: 100%;
+    color: #ccc;
+    
+}
+.date-forcast p span{
+     
+   
+    
+    margin-left:1rem ;
+    
+    
+}
+.date-forcast p .f-day{
+    max-width: 120px ;
+    justify-content: flex-start;
+    
+}
+/*-------------------------------------responsive---------------*/
+
+@media(max-width:1150px){
+    .w-container .row .weather-container .text-2{
+        
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       
+        
+     }
+     .w-container .row .weather-container .text-2 h1{
+        font-size: 25px;
+        width: 70px;
+     }
+     
+
+
+}
+
+@media(max-width:770px){
+    .w-container .row .weather-container .text-2{
+        
+        
+        display: flex;
+        flex-direction: column;
+       
+        
+     }
+     
+    
+
+}
+@media(max-width:530px){
+    .w-container .row .weather-container .text-2{
+        
+        
+        
+
+        
+       
+        
+     }
+     .w-container{
+        height: 150vh;
+        width: 60%;
+    }
+     .w-container .row .weather-container .text-2 p{
+        font-size: 16px;
+
+     }
+
+     .w-container .row .weather-container .h1{
+        font-size: 22px;
+     }
+
+
+    }
+
+    @media(max-width:580px){
+        .main-container{
+            margin: 0;
+            padding: 0;
+            height: 200vh;
+            width: 100vb;
+        }
+        .col-2s,.col-1s{
+            display: block;
+        }
+        .row{
+            height: 150vh;
+        }
+        .w-container{
+            height: 150vh;
+            width: 80%;
+        }
+    }
+
+    @media(max-width:1120px){
+        .date-forcast p span{
+     
+   
+    
+            margin-left:1.5rem ;
+            
+            
+        }
+    }
+
